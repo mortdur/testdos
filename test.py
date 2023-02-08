@@ -20,5 +20,5 @@ class TwitterSpider(scrapy.Spider):
             yield response.follow(next_page, self.parse)
             
 with st.container():    
-   parse()
+   TwitterSpider.parse()
     

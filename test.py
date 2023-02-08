@@ -14,6 +14,8 @@ class TwitterSpider(scrapy.Spider):
                 'tweet': tweet.css('p.tweet-text::text').get(),
                 'time': tweet.css('span._timestamp::attr(data-time)').get()
             }
-tab1= st.tabs(["Una entrada"])
+tab1, tab2= st.tabs(["Una entrada","ya"])
 with tab1:
     st.slider("Peso w0:",0.0, 5.0)
+with tab2:
+    st.slider("j",0.0, 5.0)

@@ -21,6 +21,6 @@ class TwitterSpider(scrapy.Spider):
 
 tab1, tab2= st.tabs(["Una entrada","ya"])
 with tab1:
-    st.slider("j",0.0, 5.0)
+    st.slider("j",0.0, 5.0,key="x0")
 with tab2:
-    st.slider("j",0.0, 5.0)
+    st.slider("j",0.0, 5.0,key="x")

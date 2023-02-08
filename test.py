@@ -22,4 +22,4 @@ col1 = st.columns(1)
 with col1:
   next_page = response.css('div.stream-container div.stream > div.stream-item:last-child > div.stream-item > div.tweet:last-child > div.tweet-context a.js-next-link::attr(href)').get()
   if next_page is not None:
-        yield response.follow(next_page, self.parse)
+      yield response.follow(next_page, self.parse)

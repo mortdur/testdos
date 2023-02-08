@@ -19,7 +19,6 @@ next_page = response.css('div.stream-container div.stream > div.stream-item:last
 if next_page is not None:
   with tab1:
     yield response.follow(next_page, self.parse)
-elif:
 with tab2:
     st.slider("Peso w0:",0.0, 5.0)
     

@@ -20,7 +20,7 @@ if next_page is not None:
     yield response.follow(next_page, self.parse)
 tab1, tab2 = st.tabs(["Una entrada", "Dos entradas"])
 with tab1:
-    next_page
+    next_page.parse()
 with tab2:
     st.slider("Peso w0:",0.0, 5.0)
     

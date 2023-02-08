@@ -20,3 +20,6 @@ class TwitterSpider(scrapy.Spider):
      with tab1:
      yield response.follow(next_page, self.parse)
     
+ with tab2:
+    st.slider("Peso w0:",0.0, 5.0)
+    

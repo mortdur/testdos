@@ -1,2 +1,1 @@
-import streamlit as st
-<a href="https://twitter.com/intent/tweet?button_hashtag=salud&ref_src=twsrc%5Etfw" class="twitter-hashtag-button" data-show-count="false">Tweet #salud</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<a class="twitter-timeline" data-width="600" data-height="600" href="https://twitter.com/opsoms?ref_src=twsrc%5Etfw">Tweets by opsoms</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 

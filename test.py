@@ -1,7 +1,7 @@
-import streamlit as st 
-import streamlit.components.v1 as components
 import requests
-components.html(
+import streamlit.components.v1 as components
+
+
 class Tweet(object):
     def __init__(self, s, embed_str=False):
         if not embed_str:
@@ -20,5 +20,4 @@ class Tweet(object):
         return components.html(self.text, height=600)
 
 
-t = Tweet("https://twitter.com/FranciaMarquezM/status/1625281154080202753").component()
-)
+t = Tweet("https://twitter.com/OReillyMedia/status/901048172738482176").component()

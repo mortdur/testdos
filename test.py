@@ -1,3 +1,4 @@
+import requests
 class Tweet(object):
     def __init__(self, s, embed_str=False):
         if not embed_str:

@@ -13,4 +13,4 @@ class Tweet(object):
     def ajuste(self):
         components.html(res, height=600)
         
-TheTweet("https://twitter.com/ark9451/status/1579814253070266375")
+TheTweet = Tweet("https://twitter.com/ark9451/status/1579814253070266375")

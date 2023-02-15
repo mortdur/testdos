@@ -12,4 +12,4 @@ def TheTweet(tweet_url):
 res = TheTweet("https://twitter.com/FrostedBlakes34/status/1625617524564828174")
 #st.write(TheTweet)
 components.html(res, height=600)
-st.text(res,unsafe_allow_html=True)
+st.box(res,unsafe_allow_html=True)

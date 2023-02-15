@@ -1,6 +1,3 @@
-import requests
-import streamlit.components.v1 as components
-
 class Tweet(object):
     def __init__(self, s, embed_str=False):
         if not embed_str:

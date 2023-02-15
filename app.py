@@ -19,3 +19,4 @@ class Tweet(object):
 
 
 t = Tweet("https://twitter.com/ark9451/status/1579814253070266375").component()
+jj

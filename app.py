@@ -5,7 +5,7 @@ import streamlit.components.v1 as components
 def TheTweet(tweet_url):
     api = "https://publish.twitter.com/oembed?url={}".format(tweet_url)
     response = requests.get(api)
-    res = reponse.json()["html"]
+    res = response.json()["html"]
     return res
 res = TheTweet("https://twitter.com/ark9451/status/1579814253070266375")
 #st.write(TheTweet)

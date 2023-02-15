@@ -8,7 +8,7 @@ def TheTweet(tweet_url):
     response = requests.get(api)
     res = response.json()["html"]
     return res
-input = "https://twitter.com/ark9451/status/1579814253070266376"
+input = "https://twitter.com/FrostedBlakes34/status/1625617524564828174"
 res = TheTweet(input)
 #st.write(TheTweet)
 components.html(res, height=600)

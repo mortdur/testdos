@@ -8,7 +8,8 @@ class Tweet(object):
         api = "https://publish.twitter.com/oembed?url={}".format(tweet_url)
         response = requests.get(api)
         res = response.json()["html"]
-        return res = tweet_url
+        return 
+    res = tweet_url
 
     def ajuste(self):
         components.html(res, height=600)

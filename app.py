@@ -12,4 +12,4 @@ def TheTweet(tweet_url):
 res = TheTweet("https://twitter.com/FrostedBlakes34/status/1625617524564828174")
 #st.write(TheTweet)
 components.html(res, height=600)
-components.html("<a href="https://twitter.com/intent/tweet?button_hashtag=LoveTwitter&ref_src=twsrc%5Etfw" class="twitter-hashtag-button" data-show-count="false">Tweet #LoveTwitter</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>", width=200, height=200)
+components.html("<a class="twitter-timeline" data-width="500" data-height="500" href="https://twitter.com/TwitterDev/lists/national-parks?ref_src=twsrc%5Etfw">A Twitter List by TwitterDev</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>")

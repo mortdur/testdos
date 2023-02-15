@@ -17,4 +17,4 @@ class Tweet(object):
 
 st.write('''
 [![Twitter URL](https://img.shields.io/twitter/url?style=social&url=https%3A%2F%2Ftwitter.com%2FOReillyMedja%2Fstatus%2F901048172738482176)](https://twitter.com/OReillyMedja/status/901048172738482176)
-''')
+)

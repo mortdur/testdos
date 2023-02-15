@@ -4,7 +4,7 @@ class Tweet(object):
 			try:
 				# Use Twitter's oEmbed API
 				# https://dev.twitter.com/web/embedded-tweets
-				api = 'https://publish.twitter.com/oembed?url=https://twitter.com/ark9451/status/1579814253070266375'+tid
+				api = 'https://publish.twitter.com/oembed?url={}'.format(s)
 				response = requests.get(api)
 				self.text = response.json()["html"]
 			except:
@@ -15,16 +15,6 @@ class Tweet(object):
 	def _repr_html_(self):
 		return self.text
 
-	def component(self):
-		return components.html(self.text, height=600)
-
-def top_daily_tweets(df):
-	df = df.sort_values(['Followers'], ascending=False).head(10)
-	return df
-
-top_daily_tweets = top_daily_tweets(data)
-
-with st.expander("Twitter feed", expanded=True):             
-	st.subheader("Most influential tweets")
-	for i in range(len(top_daily_tweets)):
-		t = Tweet(top_daily_tweets.iloc[i]['tweet_id']).component()
+st.write('''
+[![Twitter URL](https://img.shields.io/twitter/url?style=social&url=https%3A%2F%2Ftwitter.com%2FOReillyMedja%2Fstatus%2F901048172738482176)](https://twitter.com/OReillyMedja/status/901048172738482176)
+''')

@@ -11,4 +11,4 @@ def TheTweet(tweet_url):
 
 res = TheTweet("https://twitter.com/FrostedBlakes34/status/1625617524564828174")
 #st.write(TheTweet)
-components.html(res,height=600)
+components.html(res)

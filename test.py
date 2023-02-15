@@ -1,13 +1,10 @@
-import requests
-import streamlit.components.v1 as components
-
 class Tweet(object):
 	def __init__(self, tid, embed_str=False):
 		if not embed_str:
 			try:
 				# Use Twitter's oEmbed API
 				# https://dev.twitter.com/web/embedded-tweets
-				api = 'https://publish.twitter.com/oembed?url=https://twitter.com/XXX/status/'+tid
+				api = 'https://publish.twitter.com/oembed?url=https://twitter.com/ark9451/status/1579814253070266375'+tid
 				response = requests.get(api)
 				self.text = response.json()["html"]
 			except:

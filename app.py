@@ -1,3 +1,4 @@
+from requests.api import request
 import streamlit as st
 import requests
 import streamlit.components.v1 as components
@@ -10,4 +11,4 @@ def TheTweet(tweet_url):
 input = "https://twitter.com/ark9451/status/1579814253070266375"
 res = TheTweet(input)
 #st.write(TheTweet)
-components.html(TheTweet, height=600)
+components.html(res, height=600)

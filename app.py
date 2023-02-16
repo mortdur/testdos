@@ -15,3 +15,6 @@ st.bar_chart({"data": [1, 5, 2, 6, 2, 1]})
 
 with st.expander("Tumor cerebral"):
     st.text("Aqui podremos predecir si tenemos un tumor y de que tipo")
+    
+components.html('<a class="twitter-timeline" data-width="250" data-height="450" data-theme="light" href="https://twitter.com/BradleyLJones?ref_src=twsrc%5Etfw">Tweets by BradleyLJones</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>')
+

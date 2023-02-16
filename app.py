@@ -13,5 +13,5 @@ res = TheTweet("https://twitter.com/FrostedBlakes34/status/1625617524564828174")
 #st.write(TheTweet)
 st.bar_chart({"data": [1, 5, 2, 6, 2, 1]})
 
-expander = st.expander("See explanation")
-expander.components.html(res, height=600)
+with st.expander("See explanation"):
+    components.html(res, height=600)

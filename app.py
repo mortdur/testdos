@@ -12,7 +12,7 @@ def TheTweet(tweet_url):
 col1, col2 = st.columns([3, 1])
 
 col1.subheader("A wide column with a chart")
-col1.res = TheTweet("https://twitter.com/FrostedBlakes34/status/1625617524564828174")
+
 
 col2.subheader("A narrow column with the data")
 with st.expander("Tumor cerebral"):

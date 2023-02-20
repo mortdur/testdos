@@ -9,17 +9,17 @@ def TheTweet(tweet_url):
     res = response.json()["html"]
     return res
 
-col1, col2 = st.columns([3, 1])
+col1, col2, col3 = st.columns(3)
 
-col1.subheader("A wide column with a chart")
+with col1:
+   st.header("A cat")
+   st.image("https://static.streamlit.io/examples/cat.jpg")
 
+with col2:
+   st.header("A dog")
+   st.image("https://static.streamlit.io/examples/dog.jpg")
 
-col2.subheader("A narrow column with the data")
-with st.expander("Tumor cerebral"):
-    st.text("Aqui podremos predecir si tenemos un tumor y de que tipo")
-
-st.bar_chart({"data": [1, 5, 2, 6, 2, 1]})
-
-with st.expander("Tumor cerebral"):
-    st.text("Aqui podremos predecir si tenemos un tumor y de que tipo")
+with col3:
+   st.header("An owl")
+   st.image("https://static.streamlit.io/examples/owl.jpg")
     
